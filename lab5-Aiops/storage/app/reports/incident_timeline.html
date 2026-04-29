@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Incident Timeline</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      margin: 24px;
+      color: #17212b;
+      background: linear-gradient(135deg, #f9fcff 0%, #eef4fa 100%);
+    }
+    h1 { margin-bottom: 6px; }
+    .sub { color: #3f5368; margin-bottom: 20px; }
+    .timeline {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 12px;
+      border-left: 4px solid #0f4c81;
+      padding-left: 16px;
+    }
+    .time { font-weight: 700; color: #0f4c81; }
+    .event {
+      background: #ffffff;
+      border: 1px solid #d8e4ef;
+      border-radius: 10px;
+      padding: 10px 12px;
+      box-shadow: 0 3px 8px rgba(15, 76, 129, 0.08);
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Incident Timeline Visualization</h1>
+  <div class="sub">Incident INC-LW3-2026-04-17-001 | Window 2026-04-17 10:15:00 to 2026-04-17 10:45:00</div>
+  <div class="timeline">
+    <div class="time">Normal State</div><div class="event">2026-04-17 09:45:00 to 2026-04-17 10:14:00<br />Stable traffic and low error rate with baseline latency behavior.</div>
+    <div class="time">Anomaly Start</div><div class="event">2026-04-17 10:15:00<br />Latency and error-rate thresholds exceed baseline expectations.</div>
+    <div class="time">Peak Incident</div><div class="event">2026-04-17 10:30:00<br />Maximum combined impact on latency, failures, and request pressure.</div>
+    <div class="time">Recovery</div><div class="event">2026-04-17 10:46:00<br />Signals returned close to baseline and stabilized.</div>
+  </div>
+</body>
+</html>

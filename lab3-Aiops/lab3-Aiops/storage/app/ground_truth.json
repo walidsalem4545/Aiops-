@@ -1,0 +1,23 @@
+{
+  "anomaly_start_iso": "2026-03-14T01:11:38.625628+00:00",
+  "anomaly_end_iso": "2026-03-14T01:30:15.750293+00:00",
+  "anomaly_type": "ERROR_SPIKE",
+  "expected_behavior": "Error rate on /api/error rises from ~5% to ~35% during anomaly window. http_errors_total{error_category='SYSTEM_ERROR'} rate spikes clearly visible in Grafana error category breakdown panel.",
+  "total_requests": 16328,
+  "base_distribution": {
+    "/api/normal": "70%",
+    "/api/slow": "15%",
+    "/api/slow?hard=1": "5%",
+    "/api/error": "5%",
+    "/api/db": "3%",
+    "/api/validate": "2%"
+  },
+  "anomaly_distribution": {
+    "/api/normal": "45%",
+    "/api/slow": "10%",
+    "/api/slow?hard=1": "5%",
+    "/api/error": "35%",
+    "/api/db": "3%",
+    "/api/validate": "2%"
+  }
+}
